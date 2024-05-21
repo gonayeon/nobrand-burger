@@ -1,0 +1,185 @@
+.gnb .franchisee-tab {
+    background-color: #fff;
+}
+
+.gnb .franchisee-tab a {
+    color: #000;
+}
+
+.franchisee-section .title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.franchisee-section .section-title {
+    display: inline-flex;
+    align-items: center;
+    text-indent: 20px;
+    font-size: 35px;
+    color: #fabe00;
+}
+
+.section-title::before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 27px;
+    background: url(../../images/icon_hamburger_yellow.png) center no-repeat;
+    margin-bottom: 9px;   
+}
+
+.franchisee-section .content-wrap {
+    font-size: 18px;
+    font-weight: 300;
+    color: #444;
+}
+
+.privacy-collect-agreement .content-wrap {
+    border: 2px solid #c0c0c0;
+    padding: 40px;
+}
+
+.franchisee-section .contents-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.privacy-collect-agreement table {
+    margin: 30px 0;
+}
+
+.franchisee-section table,
+.franchisee-section th,
+.franchisee-section td {
+    border: 1px solid #d5d5d5;
+}
+
+.franchisee-section table thead {
+    background-color: #f5f5f5;
+}
+
+.franchisee-section th {
+    height: 49px;
+}
+
+.franchisee-section td {
+    padding: 20px;
+    text-wrap: nowrap;
+}
+
+.franchisee-section td .text-bold {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.franchisee-section .bullet-paragraph {
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.franchisee-section .bullet::before {
+    content: '\203B';
+}
+
+.check-label {
+    border: 1px solid pink;
+}
+
+.checkbox {
+    background-color: #fabe00;
+}
+
+.application-form .content-wrap {
+    border-top: 3px solid #655e50;
+}
+
+.left-head-table-style {
+    width: 100%;
+}
+
+.left-head-table-style th {
+    background-color: #f7f7f7;
+    padding: 30px 10px 30px 20px;
+    text-align: left;
+    color: #000;
+    width: 290px;
+}
+
+.left-head-table-style th::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background: url(../../images/icon_check-mark_yellow.png) center no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.left-head-table-style th,
+.left-head-table-style td {
+    border: 1px solid #d5d5d5;
+}
+
+.left-head-table-style td {
+    width: calc(100% - 290px);
+}
+
+.detail-textarea {
+    outline: none;
+    resize: none;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    min-height: 250px;
+    padding: 10px 15px;
+}
+
+.upload-file-table {
+    margin-top: 30px;
+}
+
+.upload-file-table td {
+    display: flex;
+    padding: 0;
+}
+
+#input-file {
+    display: none;
+}
+
+.upload-name {
+    border: 1px solid purple;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.upload-button {
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    width: 150px;
+    height: 100%;
+}
+
+.franchisee-page .button-wrap {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.franchisee-page .button-wrap button {
+    width: 250px;
+    padding: 19px 0;
+    font-size: 24px;
+    font-weight: 400;
+}

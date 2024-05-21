@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노브랜드버거</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/css/common/common.css">
+    <link rel="stylesheet" href="../static/css/main/main.css">
+
+    <script src="../static/js/library/jquery-3.7.1.min.js"></script>
+    <script src="../static/js/common/common.js"></script>
+    <script src="../static/js/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <!-- common.js -> commonHeaderLoad() -->
+    </header>
+    <main>
+        <div class="inner">
+            <img src="../static/images/intro.png" class="main-image-intro" alt="">
+            <div class="main-contents-wrap">
+                <div class="notice-container">
+                    <h4>
+                        뉴스
+                    </h4>
+                    <div class="notice-wrap">
+                        <ul class="notice">
+                            <li>
+                                고물가에 가성비 통했다…노브랜드 버거, ‘짜장버거’ 출시 3일 만에 3만개 돌파
+                            </li>
+                            <li>
+                                노브랜드 버거, 역대급 가성비 2900원 ‘짜장버거’ 출시
+                            </li>
+                            <li>
+                                노브랜드버거 휴면회원 복귀 안내
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-wrap">
+                        <button type="button" class="pre-button" onclick="prevNotice()">
+                            <i class="fa-solid fa-chevron-up" style="color: #333;"></i>
+                        </button>
+                        <button type="button" class="next-button" onclick="nextNotice()">
+                            <i class="fa-solid fa-chevron-down" style="color: #333;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <h3>
+                        대표메뉴
+                    </h3>
+                    <ul class="slide_wrap">
+                        <li class="slide_item">
+                            <a href="#">
+                                <div class="slide-image_1"></div>
+                                <div class="slide-title">
+                                    <h4>짜장</h4>
+                                    <p>Jjajang</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide_item">
+                            <a href="#">
+                                <div class="slide-image_2"></div>
+                                <div class="slide-title">
+                                    <h4>짜장팝 싱글팩</h4>
+                                    <p>Jjajangpop Single Pack</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide_item">
+                            <a href="#">
+                                <div class="slide-image_3"></div>
+                                <div class="slide-title">
+                                    <h4>짜계치팝 싱글팩</h4>
+                                    <p>Jjajang with Egg&#38;Cheese pop Single Pack</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide_item">
+                            <a href="#">
+                                <div class="slide-image_4"></div>
+                                <div class="slide-title">
+                                    <h4>짜계치</h4>
+                                    <p>Jjajang with Egg and Cheese</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="slide_pagination"></ul>
+                </div>
+            </div>
+        </div>
+        <img src="../static/images/main.png" class="main-image-burger" alt="">
+        <div class="background-figure"></div>
+    </main>
+    <footer>
+        <!-- common.js -> commonFooterLoad() -->
+    </footer>
+</body>
+</html>

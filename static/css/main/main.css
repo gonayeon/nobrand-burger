@@ -1,0 +1,200 @@
+
+nav:has(> .gnb) {
+    background-color: transparent;
+}
+
+.gnb li {
+    border-bottom: 4px solid #000;
+    position: relative;
+}
+
+.gnb li:hover {
+    border-color: #fff;
+}
+
+.gnb li:not(:last-child) a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+}
+
+.gnb li a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+
+main {
+    position: relative;
+    padding-top: 40px;
+    height: 750px;
+}
+
+main > .inner {
+    height: 100%;
+    position: relative;
+}
+
+.main-image-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 410px;
+}
+
+.main-image-burger {
+    position: absolute;
+    top: 68%;
+    left: 45%;
+    width: 1135px;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.background-figure {
+    background-color: #fab718;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 64.5%, 100% 54.8%, 100% 100%, 0 100%);
+    z-index: -3;
+}
+
+.main-contents-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+
+.main-contents-wrap > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.notice-container {
+    display: flex;
+    height: 50px;
+    background-color: #fff;
+}
+
+.notice-container > h4 {
+    color: red;
+    width: 50px;
+    padding: 16px 11px;
+}
+
+.notice-wrap {
+    width: calc(100% - 50px - 30px);
+    overflow: hidden;
+}
+
+.notice {
+    height: 100%;
+    position: relative;
+}
+
+.notice li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+    line-height: 54px;
+    padding-right: 7px;
+}
+
+.button-wrap {
+    width: 30px;
+}
+
+.notice-container button {
+    border: 1px solid #efefef;
+    width: 100%;
+    height: 50%;
+}
+
+.slide-container {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.slide-container > h3 {
+    background-color: rgb(220, 0, 0);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding: 6px 11px;
+    z-index: 1;
+}
+
+.slide_wrap {
+    display: flex;
+    width: 400%;
+    position: relative;
+}
+
+.slide_wrap > li {
+    width: 100%;
+}
+
+[class^="slide-image"] {
+    height: 190px;
+}
+
+.slide-image_1 {
+    background: url(../../images/slide1.png) no-repeat center/contain;
+}
+.slide-image_2 {
+    background: url(../../images/slide2.png) no-repeat center/contain;
+}
+.slide-image_3 {
+    background: url(../../images/slide3.png) no-repeat center/contain;
+}
+.slide-image_4 {
+    background: url(../../images/slide4.png) no-repeat center/contain;
+}
+
+.slide-title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.slide-title p {
+    width: 220px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slide_pagination {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.slide_pagination > li {
+    background-color: #efefef;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.slide_pagination > .active {
+    background-color: #b8b8b8;
+}

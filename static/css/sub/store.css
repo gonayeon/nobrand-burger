@@ -1,0 +1,13 @@
+.gnb .store-tab {
+    background-color: #fff;
+}
+
+.gnb .store-tab a {
+    color: #000;
+}
+
+.store-picture {
+    background: url(../../images/store-picture.png) no-repeat center/cover;
+    height: 300px;
+    margin: 50px 0;
+}

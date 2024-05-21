@@ -1,0 +1,50 @@
+.gnb .brand-tab {
+    background-color: #fff;
+}
+
+.gnb .brand-tab a {
+    color: #000;
+}
+
+.brandstory-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px 1fr;
+    padding: 30px 0;
+    gap: 20px 40px;
+}
+
+.brandstory-text > * {
+    margin-bottom: 30px;
+}
+
+.brandstory-text h4 {
+    font-size: 20px;
+}
+
+.brandstory-text p {
+    font-size: 15px;
+}
+
+
+.brandstory-container li:nth-child(1) {
+    background: url(../../images/brandstory_1.png) no-repeat center/auto;
+}
+
+.brandstory-container li:nth-child(4) {
+    background: url(../../images/brandstory_2.png) no-repeat center/auto;
+} 
+
+/* .brandstory-container li:nth-child(3) {
+    grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.brandstory-container li:nth-child(4) {
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+} */

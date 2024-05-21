@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "responsive.css";
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url(../../font/GmarketSansTTFLight.ttf) format('truetype');
+    font-weight: 300;
+    font-style: lighter;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url(../../font/GmarketSansTTFMedium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url(../../font/GmarketSansTTFBold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+/* ===== 변수 구간 ===== */
+:root {
+    --inner-width: 94rem;
+}
+
+/* ===== 공통 ===== */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'GmarketSans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    background-color: #fecd27;
+}
+
+.inner {
+    width: var(--inner-width);
+    margin: 0 auto;
+}
+
+/* ===== 서브페이지 공통 ===== */
+
+.sub-content {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-content .inner {
+    padding: 40px 0;
+}
+
+.page-rocation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.page-rocation li:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background: url(../../images/bg_home.png) no-repeat center/contain;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.page-rocation li:not(:first-child)::before {
+    content: '>';
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.page-title {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.page-title > h2 {
+    font-size: 42px;
+}
+
+.page-title > p {
+    font-size: 15px;
+}
+
+/* ===== button ===== */
+.reverse-button-style {
+    border: 3px solid #4d4d4d;
+    background-color: #fff;
+    color: #4d4d4d;
+}
+
+.yellow-button-style {
+    border: none;
+    background-color: #fabe00;
+    color: #4d4d4d;
+}
+
+/* ===== select ===== */
+.common-select-style {
+    all: unset;
+    border: 1px solid #e8e8e8;
+    min-width: 180px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: url(../../images/arrow-down.png) center right 15px/ auto no-repeat;
+}
+
+.common-select-style option {
+    height: 50px;
+}
+
+/* ===== input ===== */
+.common-input-style {
+    outline: none;
+    border: 1px solid #e8e8e8;
+    padding: 10px 15px;
+    font-size: 16px;
+    min-width: 180px;
+}
+
+.common-input-style.width-145 {
+    width: 145px;
+}
+
+.common-input-style.width-211 {
+    width: 211px;
+}
+
+.common-input-style.width-390 {
+    width: 390px;
+}
+
+/* ===== table ===== */
+
+/* ===== pagination ===== */
+
+/* ===== scroll ===== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
