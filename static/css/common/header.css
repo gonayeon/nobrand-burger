@@ -10,7 +10,7 @@
     display: block;
     width: 466px;
     height: 56px;
-    background: url(../../images/logo.png) no-repeat center/auto ;
+    background: url(/static/images/logo.png) no-repeat center/auto ;
 }
 
 nav:has(> .gnb) {

@@ -29,7 +29,7 @@
     display: block;
     width: 437px;
     height: 51px;
-    background: url(../../images/allergy-modal-button.png) no-repeat center/contain;
+    background: url(/static/images/allergy-modal-button.png) no-repeat center/contain;
     margin: 0 auto;
 }
 

@@ -7,19 +7,19 @@
 
 @font-face {
     font-family: 'GmarketSans';
-    src: url(../../font/GmarketSansTTFLight.ttf) format('truetype');
+    src: url(/static/font/GmarketSansTTFLight.ttf) format('truetype');
     font-weight: 300;
     font-style: lighter;
 }
 @font-face {
     font-family: 'GmarketSans';
-    src: url(../../font/GmarketSansTTFMedium.ttf) format('truetype');
+    src: url(/static/font/GmarketSansTTFMedium.ttf) format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'GmarketSans';
-    src: url(../../font/GmarketSansTTFBold.ttf) format('truetype');
+    src: url(/static/font/GmarketSansTTFBold.ttf) format('truetype');
     font-weight: 700;
     font-style: bold;
 }
@@ -73,7 +73,7 @@ body {
     display: inline-block;
     width: 12px;
     height: 11px;
-    background: url(../../images/bg_home.png) no-repeat center/contain;
+    background: url(/static/images/bg_home.png) no-repeat center/contain;
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -119,7 +119,7 @@ body {
     min-width: 180px;
     padding: 10px 15px;
     font-size: 16px;
-    background: url(../../images/arrow-down.png) center right 15px/ auto no-repeat;
+    background: url(/static/images/arrow-down.png) center right 15px/ auto no-repeat;
 }
 
 .common-select-style option {

@@ -28,11 +28,11 @@
 
 
 .brandstory-container li:nth-child(1) {
-    background: url(../../images/brandstory_1.png) no-repeat center/auto;
+    background: url(/static/images/brandstory_1.png) no-repeat center/auto;
 }
 
 .brandstory-container li:nth-child(4) {
-    background: url(../../images/brandstory_2.png) no-repeat center/auto;
+    background: url(/static/images/brandstory_2.png) no-repeat center/auto;
 } 
 
 /* .brandstory-container li:nth-child(3) {

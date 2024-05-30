@@ -154,16 +154,16 @@ main > .inner {
 }
 
 .slide-image_1 {
-    background: url(../../images/slide1.png) no-repeat center/contain;
+    background: url(/static/images/slide1.png) no-repeat center/contain;
 }
 .slide-image_2 {
-    background: url(../../images/slide2.png) no-repeat center/contain;
+    background: url(/static/images/slide2.png) no-repeat center/contain;
 }
 .slide-image_3 {
-    background: url(../../images/slide3.png) no-repeat center/contain;
+    background: url(/static/images/slide3.png) no-repeat center/contain;
 }
 .slide-image_4 {
-    background: url(../../images/slide4.png) no-repeat center/contain;
+    background: url(/static/images/slide4.png) no-repeat center/contain;
 }
 
 .slide-title {
