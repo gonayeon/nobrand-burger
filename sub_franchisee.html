@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>노브랜드버거 - 가맹안내</title>
 
+    <link rel="stylesheet" href="/static/css/tailwind/output.css">
     <link rel="stylesheet" href="/static/css/common/common.css">
     <link rel="stylesheet" href="/static/css/sub/franchisee.css">
 
@@ -84,22 +85,24 @@
                         그러나 동의를 거부할 경우 가맹 계약 관련 상담 및 체결이 불가능합니다.
                     </p>
                 </div>
-                <ul>
-                    <li>
-                        <label class="check-label">
-                            <input type="checkbox" class="checkbox">
-                            <span>
-                                &#40;필수&#41; 만 14세 이상입니다.
-                            </span>
+                <ul class="text-4xl">
+                    <li class="flex items-center gap-5 mt-16 mb-6">
+                        <label class="inline-block border-2 border-black w-11 h-11 bg-[#fabe00]">
+                            <input type="checkbox" class="peer hidden">
+                            <img src="/static/images/input-check-mark.svg" class="peer-[:checked]:block hidden" alt="check mark">
                         </label>
+                        <p class="pt-2">
+                            &#40;필수&#41; 만 14세 이상입니다.
+                        </p>
                     </li>
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>
-                                개인정보 수집 및 활용 동의
-                            </span>
+                    <li class="flex items-center gap-5">
+                        <label class="inline-block border-2 border-black w-11 h-11 bg-[#fabe00]">
+                            <input type="checkbox" class="peer hidden">
+                            <img src="/static/images/input-check-mark.svg" class="peer-[:checked]:block hidden" alt="check mark">
                         </label>
+                        <p class="pt-2">
+                            개인정보 수집 및 활용 동의
+                        </p>
                     </li>
                 </ul>
             </section>
@@ -194,8 +197,6 @@
                                 </select>
                                 <select class="common-select-style">
                                     <option>선택</option>
-                                    <option></option>
-                                    <option></option>
                                 </select>
                             </td>
                         </tr>
@@ -306,16 +307,16 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="left-head-table-style upload-file-table">
-                        <tr>
-                            <th>파일첨부</th>
-                            <td>
-                                <input type="text" class="upload-name" value="" readonly>
-                                <input id="input-file" type="file">
-                                <label for="input-file" class="upload-button">파일첨부</label>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="file-upload border border-[#d5d5d5] flex mt-16">
+                        <h4>
+                            파일첨부
+                        </h4>
+                        <form class="grow flex border-l border-[#d5d5d5]">
+                            <input type="text" class="grow px-6" value="" readonly>
+                            <label for="input-file" class="w-[150px] bg-[#bfbfbf] text-[20px] text-white font-normal flex-center cursor-pointer">파일첨부</label>
+                            <input id="input-file" type="file" class="hidden">
+                        </form>
+                    </div>
                     <div class="button-wrap">
                         <button type="button" class="reverse-button-style cancel-button">
                             취소

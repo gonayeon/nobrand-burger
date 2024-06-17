@@ -88,10 +88,6 @@
     content: '\203B';
 }
 
-.check-label {
-    border: 1px solid pink;
-}
-
 .checkbox {
     background-color: #fabe00;
 }
@@ -112,7 +108,8 @@
     width: 290px;
 }
 
-.left-head-table-style th::before {
+.left-head-table-style th::before,
+.file-upload h4::before {
     content: '';
     display: inline-block;
     width: 16px;
@@ -131,6 +128,14 @@
     width: calc(100% - 290px);
 }
 
+.file-upload h4 {
+    background-color: #f7f7f7;
+    padding: 17px 10px 15px 20px;
+    text-align: left;
+    color: #000;
+    width: 290px;
+}
+
 .detail-textarea {
     outline: none;
     resize: none;
@@ -140,23 +145,8 @@
     padding: 10px 15px;
 }
 
-.upload-file-table {
-    margin-top: 30px;
-}
-
-.upload-file-table td {
-    display: flex;
-    padding: 0;
-}
-
 #input-file {
     display: none;
-}
-
-.upload-name {
-    border: 1px solid purple;
-    height: 100%;
-    flex-grow: 1;
 }
 
 .upload-button {
